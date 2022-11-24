@@ -230,6 +230,7 @@ namespace ConsoleApp18
                 int sorIndex = vel.Next(palya.GetLength(0));
                 int oszlopIndexe = vel.Next(palya.GetLength(1));
                 //todo 3.feladat: Helyezze el a sziget jelét a meghatározott pozícióra!
+                if(palya[sorIndex, oszlopIndexe] == SZIGET_JEL) i--;
                 palya[sorIndex,oszlopIndexe] = SZIGET_JEL;
             }
         }
